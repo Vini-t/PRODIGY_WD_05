@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App | Prodigy Infotech</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="weather-bg"></div>
+
+  <div class="container">
+    <h1>Weather Forecast</h1>
+    <p class="subtitle">Find your local weather by city or let us detect your location</p>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name..." />
+      <button onclick="getWeatherByCity()">Search</button>
+      <button onclick="getWeatherByLocation()">Use My Location</button>
+    </div>
+
+    <div class="weather-info" id="weatherInfo">
+      <h2 id="cityName">--</h2>
+      <img id="weatherIcon" src="" alt="Weather Icon" style="display:none;" />
+      <p id="description">--</p>
+      <p id="temperature">--</p>
+      <p id="humidity">--</p>
+      <p id="wind">--</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
